@@ -484,3 +484,18 @@ body{
 #res-badges {
   display: none !important;
 }
+/* Hide intro gallery on mobile */
+@media (max-width: 720px) {
+  .intro-gallery {
+    display: none !important;
+  }
+
+  /* Reduce padding and spacing so intro looks more compact */
+  .intro {
+    margin-bottom: 8px;
+  }
+
+  .card[data-step="0"] {
+    padding: 16px;
+  }
+}
